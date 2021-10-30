@@ -1,4 +1,4 @@
-package edu.sdsu.cs160l.lab8.institute;
+package edu.sdsu.cs160l.lab8.assignment.institute;
 
 public class Student {
   private final Long redId;
