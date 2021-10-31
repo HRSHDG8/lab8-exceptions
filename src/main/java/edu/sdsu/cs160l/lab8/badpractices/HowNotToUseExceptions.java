@@ -19,6 +19,5 @@ public class HowNotToUseExceptions {
     } catch (IndexOutOfBoundsException e) {
       System.err.println("Loop terminated :: " + e.getMessage());
     }
-
   }
 }
