@@ -1,10 +1,10 @@
 package edu.sdsu.cs160l.lab8.assignment;
 
+import edu.sdsu.cs160l.lab8.assignment.institute.Registrar;
+import edu.sdsu.cs160l.lab8.assignment.institute.Student;
 import edu.sdsu.cs160l.lab8.exceptions.ClassFullException;
 import edu.sdsu.cs160l.lab8.exceptions.NoSuchCourseException;
 import edu.sdsu.cs160l.lab8.exceptions.StudentAlreadyEnrolledException;
-import edu.sdsu.cs160l.lab8.assignment.institute.Registrar;
-import edu.sdsu.cs160l.lab8.assignment.institute.Student;
 
 /**
  * Create a report explaining in one or more lines (carries 2 points)
@@ -43,7 +43,7 @@ public class Lab8 {
     } catch (NoSuchCourseException e) {
       System.err.println("No Such Course Exception :: " + e.getMessage());
     } catch (StudentAlreadyEnrolledException e) {
-      System.err.println("Student already enrolled to the course :: " + e.getMessage());
+      System.err.println("Student " + student.toString() + " already enrolled to the course :: " + e.getMessage());
     } catch (Exception e) {
       System.err.println("Generic exception :: " + e.getClass().getName() + " :: " + e.getMessage());
     } finally {
