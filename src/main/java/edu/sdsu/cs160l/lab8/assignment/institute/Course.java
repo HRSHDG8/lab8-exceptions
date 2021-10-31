@@ -29,7 +29,7 @@ public class Course {
    * 			  *           If stu is null, throw NullPointerException.
    *        *       [Your names]: Write your answers to the above questions.
    */
-  public void enrollStudent(Student studentToBeEnrolled) throws StudentAlreadyEnrolledException, ClassFullException {
+  public void addStudent(Student studentToBeEnrolled) throws StudentAlreadyEnrolledException, ClassFullException {
     //TODO check if studentToBeEnrolled is null if yes throw new NullPointerException
 
     //TODO check if studentToBeEnrolled is not already enrolled in the class if yes create and throw a StudentAlreadyPresentException,

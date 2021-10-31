@@ -27,7 +27,7 @@ public class Registrar {
 
 
     Course course = courseList.get(courseName);
-    course.enrollStudent(s);
+    course.addStudent(s);
 
   }
 
